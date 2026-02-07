@@ -18,4 +18,4 @@ function    selectionSort(arr){
 
 let teste=[1,2,3,5,6,7,9];
 
-console.log(selectionSort(teste,9));
+console.log(selectionSort(teste));

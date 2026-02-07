@@ -1,13 +1,12 @@
 
 
-    function binarysearch(arr,target){
+    function binarySearch(arr,target){
         let left=0;
         let right=arr.length -1 ;
         
         while(left <= right){
             let mid=Math.floor((left+right)/2);
             if(arr[mid] === target){
-                console.log("Valor encontrado:"+target);
                 return mid;
             }
             if(arr[mid] < target){
@@ -19,7 +18,11 @@
 
         return -1;
     }
+    let index=binarySearch([1,2,3,4,5,6,7,8,9],9);
 
-    let teste=[1,2,3,4,5,6,7,8,9];
-    binarysearch(teste,8);
+    if(index !== -1){
+        console.log("Valor encontrado no índice:"+index);
+    }else{
+        console.log("Valor não encontrado!");
+    }
     
